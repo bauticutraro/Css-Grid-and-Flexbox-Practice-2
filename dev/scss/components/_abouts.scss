@@ -1,0 +1,64 @@
+.about-container {
+    background: url(../img/about.jpg);
+    clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
+    padding: 3em 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $primary; 
+        opacity: .5;
+    }
+}
+
+.about {
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+
+    @include from(large) {
+        display: flex;
+    }
+
+    &__img {
+        display: none;
+
+        @include from(large) {
+            display: block;
+
+            &::after {
+                content: '';
+                width: 100%;
+                display: block;
+                height: 50px;
+                margin-top: -55px;
+                background: #000;
+                filter: blur(5px);
+                position: relative;
+                z-index: -1;
+            }
+        }
+    }
+
+    &__description {
+        background: rgba($accent, .9);
+        color: #fff;
+        padding: 1em;
+
+        @include from(small) { font-style: italic; }
+
+        @include from(large) {
+            width: 60%;    
+            align-self: center;
+            
+            @include font(base);
+            margin-left: -2em;
+            padding: 2em;
+        }
+    }
+}

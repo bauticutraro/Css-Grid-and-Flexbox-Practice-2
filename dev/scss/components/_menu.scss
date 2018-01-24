@@ -1,0 +1,34 @@
+.nav,
+[class*="nav--"] {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    text-align: center;
+
+    @include from(large) {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.nav__link {
+    text-decoration: none;
+    font-weight: $semibold;
+    color: $primary;
+
+    &.active {
+        color: $accent
+    }
+
+    @include from(large) {
+        display: block;
+        line-height: 2.5;
+    }
+}
+
+.nav--main {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgba(map-get($vars, primary), .5);
+}

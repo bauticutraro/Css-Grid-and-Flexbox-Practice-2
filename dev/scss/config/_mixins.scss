@@ -1,0 +1,17 @@
+@mixin var($property, $var) {
+    #{$property}: map-get($vars, $var);
+    #{$property}: var(--#{$var});
+}
+
+@mixin from($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+// Tipography
+
+@mixin font($size) {
+    font-size: nth(map-get($font, $size), 1);
+    line-height: nth(map-get($font, $size), 2);
+}

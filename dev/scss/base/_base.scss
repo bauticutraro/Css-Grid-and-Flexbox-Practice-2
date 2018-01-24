@@ -1,17 +1,32 @@
-:root {
+// :root {
+//     box-sizing: border-box;
+// }
+
+// body {
+//     font-family: Zilla Slab, serif;
+//     font-size: 20px;
+//     line-height: 30px;
+// }
+
+// ul {
+//     list-style: none;
+//     padding-left: 0;    
+// }
+// a {
+//     text-decoration: none;
+// }
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Zilla Slab, serif;
-    font-size: 20px;
-    line-height: 30px;
+    margin: 0;
+    font-family: sans-serif;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;    
-}
-a {
-    text-decoration: none;
+img {
+    max-width: 100%;
 }

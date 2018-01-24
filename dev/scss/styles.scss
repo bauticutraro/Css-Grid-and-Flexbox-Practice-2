@@ -1,17 +1,17 @@
-// Base
-@import 'base/base';
-
 // Config
+@import 'config/function';
 @import 'config/vars';
 @import 'config/mixins';
-@import 'config/function';
 
-// Utils
-@import 'utils/utils';
+// Base
+@import 'base/base';
 
 // Theme
 @import 'theme/theme';
 @import 'theme/typography';
+
+// Utils
+@import 'utils/utils';
 
 // Layout
 @import 'layout/layout';
@@ -26,6 +26,3 @@
 @import 'components/menu';
 @import 'components/section';
 @import 'components/social-networks';
-
-
-

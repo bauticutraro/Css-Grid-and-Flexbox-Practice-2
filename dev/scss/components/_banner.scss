@@ -4,6 +4,11 @@
     padding-bottom: 5em;
     position: relative;
 
+    @include from(large) {
+        padding-top: 9em;
+        padding-bottom: 9em;
+    }
+
     &::before {
         content: '';
         width: 100%;
@@ -19,10 +24,16 @@
         text-align: center;
         color: #fff;
         position: relative;
+
+        @include from(large) {
+            text-align: left;
+        
+        }
     }
 
     &__title {
         @include font(title1);
+        margin-bottom: .5em;
     }
 
     &__subtitle {
@@ -30,5 +41,9 @@
         padding: 0.5em 1em;
         display: table;
         margin: 0 auto;
+
+        @include from(large) {
+            margin-left: 3em;
+        }
     }
 }

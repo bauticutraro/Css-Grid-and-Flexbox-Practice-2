@@ -11,13 +11,13 @@
     <title>Bautista Cutraro - Fotografía</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header l-container">
         <a href="#">
             <img src="img/logo.png" alt="logo-fotografia"class="logo--main"> 
         </a>
     </header>
 
-    <nav class="menu-nav">
+    <nav class="menu-nav l-container">
         <ul class="nav--main">
             <li class="nav__item"><a href="#" class="nav__link active">Inicio</a></li>
             <li class="nav__item"><a href="#gallery" class="nav__link">Galería</a></li>
@@ -26,18 +26,18 @@
         </ul>
     </nav>
 
-    <div class="banner">
-        <div class="banner__copy">
+    <div class="banner l-container-full">
+        <div class="banner__copy l-container">
             <h2 class="banner__title">Imágenes</h2>
             <div class="banner__subtitle">Que cuentan historias</div>
         </div>
     </div>
 
-    <div class="gallery" id="gallery">
+    <div class="gallery l-container l-section" id="gallery">
         <h2 class="gallery__title section__title">Galería</h2>
         <nav class="gallery__nav">
             <ul class="nav--section">          
-                <li class="nav__item"><a href="" class="nav__link">Todo</a></li>
+                <li class="nav__item"><a href="" class="nav__link active">Todo</a></li>
                 <li class="nav__item"><a href="" class="nav__link">Gente</a></li>
                 <li class="nav__item"><a href="" class="nav__link">Lugares</a></li>
                 <li class="nav__item"><a href="" class="nav__link">Naturaleza</a></li>
@@ -60,8 +60,8 @@
         </div>
     </div>
 
-    <div class="about-container">
-        <div class="about" id="about">
+    <div class="about-container l-container--full l-section">
+        <div class="about l-container" id="about">
             <div class="about__img">
                 <img src="img/camara.png" alt="">
             </div>
@@ -73,27 +73,28 @@
         </div>  
     </div>
     
-    <div class="contact" id="contact">
+    <div class="contact l-container" id="contact">
         <h2 class="contact__title section__title">Contacto</h2>
-        <p class="contact__description"> 
+        <p class="contact__description section__description"> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat dolor. Quisque eget eros quis neque egestas ultricies. Aliquam porttitor metus ut egestas consequat. Nullam vel dui in justo scelerisque egestas. Cras non facilisis justo.
         </p>
 
         <form class="form--contact">
-            <input type="text" name="name" id="name" placeholder="Nombres">  
-            <input type="email" name="email" id="email" placeholder="Correo electrónico">  
-            <textarea name="message" id="message"></textarea>
-            <input type="submit" value="Contrátame">     
+            <input type="text" name="name" id="name" placeholder="Nombres" class="form__item">  
+            <input type="email" name="email" id="email" placeholder="Correo electrónico" class="form__item">  
+            <textarea name="message" id="message" rows="8" class="form__item" placeholder="Escribe tu mensaje"></textarea>
+            <input type="submit" value="Contrátame" class="form__item form__submit">     
         </form>
     </div>
-
-    <footer>
-        <div class="l-first">Bautista Cutraro</div> 
-        <div class="l-last">
-            <div class="social-networks">
-                <a href="#"><div class="icon-facebook"></div></a>
-                <a href="#"><div class="icon-twitter"></div></a>
-                <a href="#"><div class="icon-youtube"></div></a>
+    <footer class="footer l-container--full">
+        <div class="l-container--row">
+            <div class="l-first">Bautista Cutraro</div> 
+            <div class="l-last">
+                <div class="social-networks">
+                    <a href="#" class="icon-facebook"></a>
+                    <a href="#" class="icon-twitter"></a>
+                    <a href="#" class="icon-youtube"></a>
+                </div>
             </div>
         </div>
     </footer>

@@ -15,3 +15,24 @@
     font-size: nth(map-get($font, $size), 1);
     line-height: nth(map-get($font, $size), 2);
 }
+
+// btn
+
+@mixin button($type) {
+    line-height: 3;
+    border: 1px solid $primary;
+    cursor: pointer;
+
+
+    @if $type == primary {
+        background: $accent;
+        color: #fff;
+
+        &:hover { background: darken($accent, 5); }
+    } @else if $type == $secondary {
+        background: $secondary;
+        color: $primary;
+
+        &:hover { background: darken($secondary, 5); }        
+    }
+}
